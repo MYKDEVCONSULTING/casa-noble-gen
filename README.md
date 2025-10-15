@@ -1,96 +1,73 @@
-# MaisonsConfort - Conciergerie Immobilière
+# Welcome to your Lovable project
 
-## 📋 Description
-Site vitrine professionnel pour MaisonsConfort, conciergerie spécialisée dans la gestion de locations courte durée à Casablanca et Rabat. Plateforme moderne ciblant propriétaires et locataires avec système de réservation et synchronisation des disponibilités.
+## Project info
 
-## 🚀 Technologies
-- **Frontend**: React 18 + TypeScript + Vite
-- **Styling**: TailwindCSS + shadcn/ui
-- **Animations**: Framer Motion (via Tailwind animations)
-- **Routing**: React Router v6
-- **Forms**: React Hook Form + Zod validation
-- **Icons**: Lucide React
+**URL**: https://lovable.dev/projects/ec2aa767-8686-4970-88b8-d1c690b07313
 
-## 🎨 Design System
-Palette professionnelle agence immobilière :
-- **Bleu Marine**: Couleur principale (confiance, professionnalisme)
-- **Or Élégant**: Accent premium (luxe, qualité)
-- **Blanc/Gris**: Neutrals (clarté, modernité)
+## How can I edit this code?
 
-## 📁 Structure du Projet
-```
-src/
-├── components/        # Composants réutilisables
-│   ├── ui/           # Composants shadcn/ui
-│   ├── Header.tsx
-│   ├── Footer.tsx
-│   ├── Hero.tsx
-│   └── ...
-├── pages/            # Pages de l'application
-│   ├── Index.tsx     # Accueil
-│   ├── About.tsx     # À propos
-│   ├── Services.tsx  # Services
-│   ├── Properties.tsx # Appartements
-│   └── Contact.tsx   # Contact
-├── assets/           # Images et médias
-└── lib/              # Utilitaires
-```
+There are several ways of editing your application.
 
-## 🛠️ Installation et Démarrage
+**Use Lovable**
 
-### Prérequis
-- Node.js 18+ et npm/yarn
+Simply visit the [Lovable Project](https://lovable.dev/projects/ec2aa767-8686-4970-88b8-d1c690b07313) and start prompting.
 
-### Installation
-```bash
-# Cloner le repository
-git clone <votre-repo-url>
-cd maisonsconfort
+Changes made via Lovable will be committed automatically to this repo.
 
-# Installer les dépendances
-npm install
+**Use your preferred IDE**
 
-# Lancer le serveur de développement
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-Le site sera accessible sur `http://localhost:5173`
+**Edit a file directly in GitHub**
 
-### Build Production
-```bash
-npm run build
-npm run preview
-```
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## 📱 Pages Disponibles
-- **/** - Page d'accueil avec hero, services et propriétés vedettes
-- **/about** - Histoire et valeurs de l'entreprise
-- **/services** - Services pour propriétaires et locataires
-- **/properties** - Catalogue des appartements avec filtres
-- **/contact** - Formulaire de contact et informations
+**Use GitHub Codespaces**
 
-## 🔧 Configuration
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-### Variables d'environnement (à venir)
-```env
-VITE_WHATSAPP_NUMBER=2126452437
-VITE_CONTACT_EMAIL=contact@maisonsconfort.ma
-VITE_GOOGLE_MAPS_API_KEY=your_api_key
-```
+## What technologies are used for this project?
 
-## 🎯 Fonctionnalités Actuelles
-- ✅ Navigation responsive avec menu mobile
-- ✅ Design mobile-first
-- ✅ Animations fluides et modernes
-- ✅ Formulaires de contact validés
-- ✅ Grille de propriétés filtrable
-- ✅ CTA WhatsApp intégré
-- ✅ SEO optimisé (meta tags)
+This project is built with:
 
-## 📞 Contact
-- **WhatsApp**: [+212 645 243 7](https://wa.me/2126452437)
-- **Email**: contact@maisonsconfort.ma
-- **Instagram**: [@maisonsconfort](https://instagram.com/maisonsconfort)
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## 📄 Licence
-© 2025 MaisonsConfort. Tous droits réservés.
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/ec2aa767-8686-4970-88b8-d1c690b07313) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
