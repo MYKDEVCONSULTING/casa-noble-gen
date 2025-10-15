@@ -9,100 +9,101 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 221 83% 20%;
+    --foreground: 215 28% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 221 83% 20%;
+    --card-foreground: 215 28% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 221 83% 20%;
+    --popover-foreground: 215 28% 17%;
 
-    /* Bleu nuit principal */
-    --primary: 221 83% 32%;
-    --primary-foreground: 0 0% 100%;
+    /* Bleu marine profond - couleur principale premium */
+    --primary: 215 45% 20%;
+    --primary-foreground: 0 0% 98%;
     
-    /* Bleu nuit plus clair */
-    --secondary: 221 50% 45%;
-    --secondary-foreground: 0 0% 100%;
+    /* Bleu marine moyen - variante secondaire */
+    --secondary: 215 35% 35%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 221 30% 50%;
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 20% 45%;
 
-    /* Or/Gold accent */
-    --accent: 43 66% 52%;
-    --accent-foreground: 221 83% 20%;
+    /* Or élégant - accent luxe */
+    --accent: 42 48% 58%;
+    --accent-foreground: 215 45% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 221 83% 32%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 215 45% 20%;
 
     --radius: 0.5rem;
 
-    /* Custom tokens pour immobilier */
-    --hero-overlay: 221 83% 20%;
-    --hero-gradient-start: 221 83% 32%;
-    --hero-gradient-end: 221 50% 45%;
+    /* Tokens premium immobilier */
+    --hero-overlay: 215 50% 12%;
+    --hero-gradient-start: 215 45% 20%;
+    --hero-gradient-end: 215 35% 35%;
     
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    /* Vert succès élégant */
+    --success: 158 64% 42%;
+    --success-foreground: 0 0% 98%;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 221 83% 20%;
-    --sidebar-primary: 221 83% 32%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 15% 95%;
-    --sidebar-accent-foreground: 221 83% 20%;
-    --sidebar-border: 220 15% 90%;
-    --sidebar-ring: 221 83% 32%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 215 45% 20%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 15% 96%;
+    --sidebar-accent-foreground: 215 28% 17%;
+    --sidebar-border: 214 20% 88%;
+    --sidebar-ring: 215 45% 20%;
   }
 
   .dark {
-    --background: 221 83% 15%;
+    --background: 215 45% 12%;
     --foreground: 0 0% 95%;
 
-    --card: 221 70% 20%;
+    --card: 215 40% 18%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 221 70% 20%;
+    --popover: 215 40% 18%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 221 83% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 215 40% 45%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 221 60% 35%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 215 30% 32%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 221 50% 25%;
-    --muted-foreground: 220 20% 70%;
+    --muted: 215 35% 22%;
+    --muted-foreground: 214 15% 65%;
 
-    --accent: 43 66% 52%;
-    --accent-foreground: 221 83% 15%;
+    --accent: 42 48% 58%;
+    --accent-foreground: 215 45% 12%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 221 50% 25%;
-    --input: 221 50% 25%;
-    --ring: 221 83% 45%;
+    --border: 215 30% 28%;
+    --input: 215 30% 28%;
+    --ring: 215 40% 45%;
 
-    --hero-overlay: 221 83% 10%;
-    --hero-gradient-start: 221 83% 25%;
-    --hero-gradient-end: 221 60% 35%;
+    --hero-overlay: 215 50% 8%;
+    --hero-gradient-start: 215 45% 15%;
+    --hero-gradient-end: 215 35% 28%;
 
-    --success: 142 76% 40%;
-    --success-foreground: 0 0% 100%;
+    --success: 158 64% 45%;
+    --success-foreground: 0 0% 98%;
 
-    --sidebar-background: 221 70% 18%;
+    --sidebar-background: 215 40% 15%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 221 83% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 221 50% 25%;
+    --sidebar-primary: 215 40% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 35% 22%;
     --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 221 50% 25%;
-    --sidebar-ring: 221 83% 45%;
+    --sidebar-border: 215 30% 28%;
+    --sidebar-ring: 215 40% 45%;
   }
 }
 
@@ -139,7 +140,11 @@ All colors MUST be HSL.
   }
 
   .gold-gradient {
-    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(43 70% 60%) 100%);
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(42 55% 65%) 100%);
+  }
+
+  .luxury-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent) / 0.2) 100%);
   }
 
   .text-balance {
