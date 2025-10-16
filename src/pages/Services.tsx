@@ -14,6 +14,8 @@ import {
   MessageCircle,
   HeadphonesIcon,
 } from 'lucide-react';
+import serviceOwnerImg from '@/assets/service-owner.jpg';
+import serviceTenantImg from '@/assets/service-tenant.jpg';
 
 const Services = () => {
   const ownerServices = [
@@ -47,20 +49,27 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Services Grid */}
+        {/* Services Grid with Images */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              {/* Owner Services */}
-              <div id="proprio" className="animate-fade-in">
-                <div className="bg-primary/5 p-8 rounded-lg h-full">
+            {/* Owner Services */}
+            <div id="proprio" className="mb-20">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div className="order-2 lg:order-1">
+                  <img
+                    src={serviceOwnerImg}
+                    alt="Propriétaire confiant les clés"
+                    className="rounded-lg shadow-2xl w-full"
+                  />
+                </div>
+                <div className="order-1 lg:order-2">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-primary-foreground mb-6">
                     <Key className="h-8 w-8" />
                   </div>
                   <h2 className="mb-6">Pour les Propriétaires</h2>
-                  <p className="text-muted-foreground mb-8">
+                  <p className="text-lg text-muted-foreground mb-8">
                     Confiez-nous votre bien et profitez d'une gestion sans tracas avec une 
-                    rentabilité optimisée.
+                    rentabilité optimisée. Nous prenons tout en charge de A à Z.
                   </p>
                   
                   <ul className="space-y-4 mb-8">
@@ -93,23 +102,25 @@ const Services = () => {
                   </div>
 
                   <Link to="/contact">
-                    <Button variant="default" size="lg" className="w-full">
+                    <Button variant="default" size="lg" className="w-full md:w-auto">
                       Demander une estimation
                     </Button>
                   </Link>
                 </div>
               </div>
+            </div>
 
-              {/* Tenant Services */}
-              <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <div className="bg-success/5 p-8 rounded-lg h-full">
+            {/* Tenant Services */}
+            <div className="mt-32">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div>
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-success text-success-foreground mb-6">
                     <Search className="h-8 w-8" />
                   </div>
                   <h2 className="mb-6">Pour les Locataires</h2>
-                  <p className="text-muted-foreground mb-8">
+                  <p className="text-lg text-muted-foreground mb-8">
                     Trouvez le logement idéal pour votre séjour à Casablanca ou Rabat en 
-                    quelques clics.
+                    quelques clics. Profitez d'un service client irréprochable.
                   </p>
                   
                   <ul className="space-y-4 mb-8">
@@ -138,10 +149,17 @@ const Services = () => {
                   </div>
 
                   <Link to="/properties">
-                    <Button variant="success" size="lg" className="w-full">
+                    <Button variant="success" size="lg" className="w-full md:w-auto">
                       Voir les appartements
                     </Button>
                   </Link>
+                </div>
+                <div>
+                  <img
+                    src={serviceTenantImg}
+                    alt="Locataires heureux"
+                    className="rounded-lg shadow-2xl w-full"
+                  />
                 </div>
               </div>
             </div>

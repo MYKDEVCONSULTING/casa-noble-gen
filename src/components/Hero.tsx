@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/hero-casablanca.jpg';
+import heroImage from '@/assets/hero-apartment.jpg';
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Casablanca Skyline"
+          alt="Appartement moderne luxueux"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-hero-overlay/90 to-hero-overlay/60" />

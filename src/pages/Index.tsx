@@ -117,7 +117,7 @@ const Index = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 hero-gradient">
+        <section className="py-20 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="mb-6 text-primary-foreground">Prêt à maximiser vos revenus ?</h2>
             <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">

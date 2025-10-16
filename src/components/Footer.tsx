@@ -72,7 +72,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Suivez-nous</h4>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/2126452437"
+                href="https://wa.me/212620836989"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"

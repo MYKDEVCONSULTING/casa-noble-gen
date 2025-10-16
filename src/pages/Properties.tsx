@@ -190,7 +190,7 @@ const Properties = () => {
               Notre équipe est disponible sur WhatsApp pour vous aider à trouver le logement idéal
             </p>
             <a
-              href="https://wa.me/2126452437?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20pour%20choisir%20un%20logement"
+              href="https://wa.me/212620836989?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20pour%20choisir%20un%20logement"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Wifi, Snowflake, Car, Bed, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface PropertyCardProps {
   id: number;
@@ -15,6 +16,7 @@ interface PropertyCardProps {
 }
 
 const PropertyCard = ({
+  id,
   title,
   location,
   price,
@@ -30,26 +32,27 @@ const PropertyCard = ({
   };
 
   const handleReservation = () => {
-    const message = encodeURIComponent(`Bonjour, je suis intéressé(e) par ${title} à ${location}`);
-    window.open(`https://wa.me/2126452437?text=${message}`, '_blank');
+    const message = encodeURIComponent(`Bonjour, je veux en savoir plus sur ${title} à ${location}. Prix: ${price} DH/nuit`);
+    window.open(`https://wa.me/212620836989?text=${message}`, '_blank');
   };
 
   return (
-    <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 animate-fade-in">
-      <div className="relative overflow-hidden h-64">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-        />
-        {!available && (
-          <div className="absolute inset-0 bg-foreground/60 flex items-center justify-center">
-            <Badge variant="destructive" className="text-lg">
-              Indisponible
-            </Badge>
-          </div>
-        )}
-      </div>
+    <Link to={`/properties/${id}`}>
+      <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 animate-fade-in cursor-pointer">
+        <div className="relative overflow-hidden h-64">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          {!available && (
+            <div className="absolute inset-0 bg-foreground/60 flex items-center justify-center">
+              <Badge variant="destructive" className="text-lg">
+                Indisponible
+              </Badge>
+            </div>
+          )}
+        </div>
 
       <CardContent className="p-6">
         <div className="flex items-start justify-between mb-3">
@@ -85,18 +88,22 @@ const PropertyCard = ({
         </div>
       </CardContent>
 
-      <CardFooter className="px-6 pb-6">
-        <Button
-          variant={available ? 'default' : 'outline'}
-          className="w-full"
-          size="lg"
-          onClick={handleReservation}
-          disabled={!available}
-        >
-          {available ? 'Réserver' : 'Me prévenir'}
-        </Button>
-      </CardFooter>
-    </Card>
+        <CardFooter className="px-6 pb-6">
+          <Button
+            variant={available ? 'default' : 'outline'}
+            className="w-full"
+            size="lg"
+            onClick={(e) => {
+              e.preventDefault();
+              handleReservation();
+            }}
+            disabled={!available}
+          >
+            {available ? 'Réserver' : 'Me prévenir'}
+          </Button>
+        </CardFooter>
+      </Card>
+    </Link>
   );
 };
 

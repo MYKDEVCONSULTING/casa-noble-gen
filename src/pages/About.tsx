@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Users, Award, TrendingUp, Clock } from 'lucide-react';
+import aboutTeamImg from '@/assets/about-team.jpg';
 
 const About = () => {
   const stats = [
@@ -64,27 +65,41 @@ const About = () => {
           </div>
         </section>
 
-        {/* Our Story */}
+        {/* Qui sommes-nous */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-center mb-12">Notre Histoire</h2>
-              <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-muted-foreground mb-6">
-                  Fondé en 2023 par une équipe de 2 passionnés de l'immobilier et de l'hospitalité, 
-                  MaisonsConfort est né d'un constat simple : les propriétaires manquent de temps et 
-                  d'expertise pour optimiser leurs locations courte durée.
-                </p>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Nous avons créé une solution clé en main qui combine technologie de pointe et 
-                  service personnalisé. Notre objectif ? Maximiser vos revenus tout en offrant 
-                  une expérience exceptionnelle à vos locataires.
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  Aujourd'hui, nous gérons 23 biens à Casablanca et Rabat avec un taux d'occupation 
-                  moyen de 92%, bien au-dessus de la moyenne du marché. Notre succès repose sur 
-                  notre engagement envers l'excellence et la satisfaction client.
-                </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <h2 className="mb-6">Qui sommes-nous ?</h2>
+                <div className="space-y-4 text-lg text-muted-foreground">
+                  <p>
+                    Fondé en 2023 par une équipe de 2 passionnés de l'immobilier et de 
+                    l'hospitalité, MaisonsConfort est né d'une vision simple : offrir aux 
+                    propriétaires une gestion professionnelle et transparente de leurs 
+                    biens, tout en garantissant aux locataires une expérience 
+                    exceptionnelle.
+                  </p>
+                  <p>
+                    Aujourd'hui, nous gérons <strong>23 biens d'exception</strong> à Casablanca et 
+                    Rabat, avec un taux d'occupation moyen de <strong>92%</strong>.
+                  </p>
+                  <p>
+                    Notre secret ? Une approche personnalisée, des technologies de 
+                    pointe et une équipe disponible 24/7 pour répondre à tous les 
+                    besoins.
+                  </p>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                  src={aboutTeamImg}
+                  alt="Équipe MaisonsConfort"
+                  className="rounded-lg shadow-2xl"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-xl">
+                  <div className="text-4xl font-bold mb-1">92%</div>
+                  <div className="text-sm">Taux d'occupation</div>
+                </div>
               </div>
             </div>
           </div>
