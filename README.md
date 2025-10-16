@@ -4,70 +4,49 @@
 
 **URL**: https://lovable.dev/projects/ec2aa767-8686-4970-88b8-d1c690b07313
 
-## How can I edit this code?
+```markdown
+# MaisonsConfort — Frontend
 
-There are several ways of editing your application.
+Site frontend pour MaisonsConfort, conciergerie immobilière à Casablanca et Rabat.
 
-**Use Lovable**
+## Démarrage local
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ec2aa767-8686-4970-88b8-d1c690b07313) and start prompting.
+Prérequis : Node.js (version 18+ recommandée) et Yarn ou npm.
 
-Changes made via Lovable will be committed automatically to this repo.
+Exemples de commandes (Windows, invite de commandes) :
 
-**Use your preferred IDE**
+```cmd
+git clone <VOTRE_URL_GIT>
+cd "c:\\Users\\<vous>\\Desktop\\Mes Projet Personnels\\casa-noble-gen"
+yarn install
+yarn dev
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+ou avec npm :
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```cmd
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Le serveur de développement lancera l'application sur http://localhost:8080.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Structure du projet
 
-**Use GitHub Codespaces**
+- `src/` : code source React/TypeScript
+- `public/` : ressources publiques (ajoutez ici `logo.png` pour le site)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Remarques sur les changements
 
-## What technologies are used for this project?
+- Les références et outils du générateur de projet précédent ont été retirés (mentions "Lovable" et plugin de taggage). Si vous souhaitez réactiver un plugin de développement équivalent, ajoutez-le dans `vite.config.ts`.
 
-This project is built with:
+## Déploiement
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Construisez avec `yarn build` (ou `npm run build`) puis déployez le contenu du dossier `dist` sur votre hébergeur (Netlify, Vercel, ou serveur statique).
 
-## How can I deploy this project?
+## Support
 
-Simply open [Lovable](https://lovable.dev/projects/ec2aa767-8686-4970-88b8-d1c690b07313) and click on Share -> Publish.
+Pour toute modification de contenu (titres, méta, images sociales), éditez `index.html` et `src/`.
 
-## Can I connect a custom domain to my Lovable project?
+```
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
