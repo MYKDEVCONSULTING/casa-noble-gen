@@ -117,10 +117,10 @@ const Index = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="mb-6 text-primary-foreground">Prêt à maximiser vos revenus ?</h2>
-            <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+            <h2 className="mb-6 text-primary">Prêt à maximiser vos revenus ?</h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Confiez-nous la gestion de votre bien et profitez d'une occupation moyenne de 92%
             </p>
             <Link to="/contact">

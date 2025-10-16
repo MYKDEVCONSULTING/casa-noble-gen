@@ -66,7 +66,7 @@ const Services = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-primary-foreground mb-6">
                     <Key className="h-8 w-8" />
                   </div>
-                  <h2 className="mb-6">Pour les Propriétaires</h2>
+                  <h2 className="mb-6">Formule Premium Propriétaire</h2>
                   <p className="text-lg text-muted-foreground mb-8">
                     Confiez-nous votre bien et profitez d'une gestion sans tracas avec une 
                     rentabilité optimisée. Nous prenons tout en charge de A à Z.
@@ -117,7 +117,7 @@ const Services = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-success text-success-foreground mb-6">
                     <Search className="h-8 w-8" />
                   </div>
-                  <h2 className="mb-6">Pour les Locataires</h2>
+                  <h2 className="mb-6">Formule Séjour de Luxe</h2>
                   <p className="text-lg text-muted-foreground mb-8">
                     Trouvez le logement idéal pour votre séjour à Casablanca ou Rabat en 
                     quelques clics. Profitez d'un service client irréprochable.

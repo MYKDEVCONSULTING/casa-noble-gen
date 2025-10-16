@@ -18,10 +18,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-balance mb-6 text-primary-foreground">
+          <h1 className="text-balance mb-6" style={{ color: '#C99E35' }}>
             Votre confort, notre priorité
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto" style={{ color: '#C99E35' }}>
             Conciergerie courte durée à Casablanca & Rabat
           </p>
 
@@ -41,16 +41,16 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">23</div>
-              <div className="text-sm text-primary-foreground/80">Biens Gérés</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2" style={{ color: '#C99E35' }}>23</div>
+              <div className="text-sm" style={{ color: '#C99E35' }}>Biens Gérés</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">92%</div>
-              <div className="text-sm text-primary-foreground/80">Taux d'occupation</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2" style={{ color: '#C99E35' }}>92%</div>
+              <div className="text-sm" style={{ color: '#C99E35' }}>Taux d'occupation</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">24/7</div>
-              <div className="text-sm text-primary-foreground/80">Support Client</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2" style={{ color: '#C99E35' }}>24/7</div>
+              <div className="text-sm" style={{ color: '#C99E35' }}>Support Client</div>
             </div>
           </div>
         </div>

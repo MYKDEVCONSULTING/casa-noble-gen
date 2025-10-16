@@ -2,6 +2,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Users, Award, TrendingUp, Clock } from 'lucide-react';
 import aboutTeamImg from '@/assets/about-team.jpg';
+import valueExcellence from '@/assets/value-excellence.png';
+import valueTransparency from '@/assets/value-transparency.png';
+import valueInnovation from '@/assets/value-innovation.png';
 
 const About = () => {
   const stats = [
@@ -146,22 +149,22 @@ const About = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-center mb-12">Nos Valeurs</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center p-6">
-                <div className="text-4xl mb-4">🎯</div>
+              <div className="text-center p-8 bg-card rounded-lg hover:shadow-lg transition-shadow">
+                <img src={valueExcellence} alt="Excellence" className="w-24 h-24 mx-auto mb-6 object-contain" />
                 <h3 className="mb-3">Excellence</h3>
                 <p className="text-muted-foreground">
                   Nous visons l'excellence dans chaque aspect de notre service
                 </p>
               </div>
-              <div className="text-center p-6">
-                <div className="text-4xl mb-4">🤝</div>
+              <div className="text-center p-8 bg-card rounded-lg hover:shadow-lg transition-shadow">
+                <img src={valueTransparency} alt="Transparence" className="w-24 h-24 mx-auto mb-6 object-contain" />
                 <h3 className="mb-3">Transparence</h3>
                 <p className="text-muted-foreground">
                   Communication claire et rapports détaillés pour une confiance totale
                 </p>
               </div>
-              <div className="text-center p-6">
-                <div className="text-4xl mb-4">💎</div>
+              <div className="text-center p-8 bg-card rounded-lg hover:shadow-lg transition-shadow">
+                <img src={valueInnovation} alt="Innovation" className="w-24 h-24 mx-auto mb-6 object-contain" />
                 <h3 className="mb-3">Innovation</h3>
                 <p className="text-muted-foreground">
                   Adoption des meilleures technologies pour optimiser votre rentabilité
